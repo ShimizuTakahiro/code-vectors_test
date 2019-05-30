@@ -1,7 +1,14 @@
 #include <stdio.h>
 
+void print_hello(){
+
+  printf("Hello, world!\n");
+
+}
+
 int main(int argc, char *args[])
 {
-    printf("Hello, world!\n");
-    return 0;
+  print_hello();
+
+  return 0;
 }
