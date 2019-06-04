@@ -1,14 +1,14 @@
 
-CC = gcc
+CC = cc
 all: hello
 
 default: all
 
 hello:
-	gcc -o helloWorld helloWorld.c
+	cc -c helloWorld.c
 
 clean:
-	rm helloWorld
+	rm -f *.out
 
 .PHONY:
 	clean
