@@ -5,10 +5,10 @@ all: hello
 default: all
 
 hello:
-	cc -c helloWorld.c
+	cc -Wall -Os -g -c helloWorld.c
 
 clean:
-	rm -f *.out
+	rm -f *.o
 
 .PHONY:
 	clean
