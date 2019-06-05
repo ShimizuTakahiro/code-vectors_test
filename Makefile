@@ -1,11 +1,11 @@
 
-CC = cc
+CC = gcc
 all: hello
 
 default: all
 
 hello:
-	cc -Wall -Os -g -c helloWorld.c
+	$(CC) -Wall -Os -g -c helloWorld.c
 
 clean:
 	rm -f *.o
