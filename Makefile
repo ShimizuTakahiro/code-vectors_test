@@ -5,7 +5,7 @@ all: hello
 default: all
 
 hello:
-	$(CC) -Wall -Os -g -c helloWorld.c
+	$(CC) -Wall -Os -g -c sample2.c
 
 clean:
 	rm -f *.o
