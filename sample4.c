@@ -25,6 +25,8 @@ int main(){
   int a,b;
   scanf("%d", &a);
   scanf("%d", &b);
-  task(a, b);
+  for(int i=0; i<10; i++){
+    task(a, b);
+  }
   return 0;
 }
