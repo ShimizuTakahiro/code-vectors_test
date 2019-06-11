@@ -6,6 +6,9 @@ int A(void);
 void B(void);
 int a;
 int b;
+void dummy1();
+void dummy2();
+void dummy3();
   
 void main(void)
 {
@@ -25,12 +28,15 @@ void B(void)
       case(0):
         if(d == 1){
           a = 1;
+	  dummy1();
         }
         else if (d == 2){
           a = 2;
+	  dummy2();
         }
         else{
           printf("message2\n");
+	  dummy3();
         }
         break;
   	
@@ -73,3 +79,11 @@ int A(void)
   return e;
 }
 
+void dummy1(){
+}
+
+void dummy2(){
+}
+
+void dummy3(){
+}
