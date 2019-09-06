@@ -85,7 +85,7 @@ void main(void)
   }else{
     dummy11();
   }
-
+  /*
   srand(time(NULL));
   b = rand()%2;
   c = rand()%3+1;
@@ -145,6 +145,7 @@ void main(void)
   }else{
     dummy11();
   }
+  */
 }
 
 void dummy_init(){
