@@ -27,7 +27,7 @@ void main(void)
   c = rand()%6+1;
   
   if(b == 1){
-    printf("message1\n");
+    //printf("message1\n");
     switch(a)  {
       case(0):
         if(c == 1){
@@ -39,7 +39,7 @@ void main(void)
 	  dummy2();
         }
         else{
-          printf("message2\n");
+          //printf("message2\n");
 	  dummy3();
         }
         break;
@@ -54,7 +54,7 @@ void main(void)
 	  dummy5();
         }
         else{
-          printf("message2\n");
+          //printf("message2\n");
 	  dummy6();
         }
         break;
@@ -69,13 +69,71 @@ void main(void)
 	  dummy8();
         }
         else{
-          printf("message2\n");
+          //printf("message2\n");
 	  dummy9();
         }
         break;
 
       default:
-        printf("message3\n");
+        //printf("message3\n");
+	dummy10();
+    }
+  }
+
+  srand(time(NULL));
+  b = rand()%2;
+  c = rand()%6+1;
+  
+  if(b == 1){
+    //printf("message1\n");
+    switch(a)  {
+      case(0):
+        if(c == 1){
+          a = 1;
+	  dummy1();
+        }
+        else if (c == 2){
+          a = 2;
+	  dummy2();
+        }
+        else{
+          //printf("message2\n");
+	  dummy3();
+        }
+        break;
+  	
+      case(1):
+        if(c == 1){
+          a = 2;
+	  dummy4();
+        }
+        else if (c == 2){
+          a = 0;
+	  dummy5();
+        }
+        else{
+          //printf("message2\n");
+	  dummy6();
+        }
+        break;
+
+      case(2):
+        if(c == 1){
+          a = 0;
+	  dummy7();
+        }
+        else if (c == 2){
+          a = 1;
+	  dummy8();
+        }
+        else{
+          //printf("message2\n");
+	  dummy9();
+        }
+        break;
+
+      default:
+        //printf("message3\n");
 	dummy10();
     }
   }
