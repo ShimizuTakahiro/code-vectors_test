@@ -17,6 +17,18 @@ void dummy8();
 void dummy9();
 void dummy10();
 void dummy11();
+
+void dummy21();
+void dummy22();
+void dummy23();
+void dummy24();
+void dummy25();
+void dummy26();
+void dummy27();
+void dummy28();
+void dummy29();
+void dummy30();
+void dummy31();
   
 void main(void)
 {
@@ -85,65 +97,65 @@ void main(void)
   }else{
     dummy11();
   }
-  /*
+  
   srand(time(NULL));
   b = rand()%2;
   c = rand()%3+1;
-  */
+
   if(b == 1){
     //printf("message1\n");
     switch(a)  {
       case(0):
         if(c == 1){
           a = 1;
-	  dummy1();
+	  dummy21();
         }
         else if (c == 2){
           a = 2;
-	  dummy2();
+	  dummy22();
         }
         else{
           //printf("message2\n");
-	  dummy3();
+	  dummy23();
         }
         break;
   	
       case(1):
         if(c == 1){
           a = 2;
-	  dummy4();
+	  dummy24();
         }
         else if (c == 2){
           a = 0;
-	  dummy5();
+	  dummy25();
         }
         else{
           //printf("message2\n");
-	  dummy6();
+	  dummy26();
         }
         break;
 
       case(2):
         if(c == 1){
           a = 0;
-	  dummy7();
+	  dummy27();
         }
         else if (c == 2){
           a = 1;
-	  dummy8();
+	  dummy28();
         }
         else{
           //printf("message2\n");
-	  dummy9();
+	  dummy29();
         }
         break;
 
       default:
         //printf("message3\n");
-	dummy10();
+	dummy30();
     }
   }else{
-    dummy11();
+    dummy31();
   }
   
 }
@@ -182,4 +194,37 @@ void dummy10(){
 }
 
 void dummy11(){
+}
+
+void dummy21(){
+}
+
+void dummy22(){
+}
+
+void dummy23(){
+}
+
+void dummy24(){
+}
+
+void dummy25(){
+}
+
+void dummy26(){
+}
+
+void dummy27(){
+}
+
+void dummy28(){
+}
+
+void dummy29(){
+}
+
+void dummy30(){
+}
+
+void dummy31(){
 }
