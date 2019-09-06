@@ -5,6 +5,7 @@
 void B(void);
 int a;
 int b;
+void dummy_init();
 void dummy1();
 void dummy2();
 void dummy3();
@@ -15,16 +16,19 @@ void dummy7();
 void dummy8();
 void dummy9();
 void dummy10();
+void dummy11();
   
 void main(void)
 {
+  dummy_init();
+  
   int c;
   srand(time(NULL));
   a = rand()%3; 
 
   srand(time(NULL));
   b = rand()%2;
-  c = rand()%6+1;
+  c = rand()%3+1;
   
   if(b == 1){
     //printf("message1\n");
@@ -78,11 +82,13 @@ void main(void)
         //printf("message3\n");
 	dummy10();
     }
+  }else{
+    dummy11();
   }
 
   srand(time(NULL));
   b = rand()%2;
-  c = rand()%6+1;
+  c = rand()%3+1;
   
   if(b == 1){
     //printf("message1\n");
@@ -136,7 +142,12 @@ void main(void)
         //printf("message3\n");
 	dummy10();
     }
+  }else{
+    dummy11();
   }
+}
+
+void dummy_init(){
 }
 
 void dummy1(){
@@ -167,4 +178,7 @@ void dummy9(){
 }
 
 void dummy10(){
+}
+
+void dummy11(){
 }
