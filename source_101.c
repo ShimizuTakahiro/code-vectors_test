@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-int A(void);
 void B(void);
 int a;
 int b;
@@ -19,34 +18,23 @@ void dummy10();
   
 void main(void)
 {
-  int n;
+  int c;
   srand(time(NULL));
-  n = rand()%10+1;
-  a = rand()%2+1;
-  b = rand()%3;
-  for(int i=0; i<n; i++){
-    srand(time(NULL));
-    a = rand()%2+1;
-    B();
-  }
-}
+  a = rand()%3; 
 
-void B(void)
-{
-  int c, d;
-  c = A();
-  d = A();
-
+  srand(time(NULL));
+  b = rand()%2;
+  c = rand()%6+1;
   
   if(b == 1){
     printf("message1\n");
     switch(a)  {
       case(0):
-        if(d == 1){
+        if(c == 1){
           a = 1;
 	  dummy1();
         }
-        else if (d == 2){
+        else if (c == 2){
           a = 2;
 	  dummy2();
         }
@@ -57,11 +45,11 @@ void B(void)
         break;
   	
       case(1):
-        if(d == 1){
+        if(c == 1){
           a = 2;
 	  dummy4();
         }
-        else if (d == 2){
+        else if (c == 2){
           a = 0;
 	  dummy5();
         }
@@ -72,11 +60,11 @@ void B(void)
         break;
 
       case(2):
-        if(d == 1){
+        if(c == 1){
           a = 0;
 	  dummy7();
         }
-        else if (d == 2){
+        else if (c == 2){
           a = 1;
 	  dummy8();
         }
@@ -86,20 +74,11 @@ void B(void)
         }
         break;
 
-        default:
-          printf("message3\n");
-	  dummy10();
+      default:
+        printf("message3\n");
+	dummy10();
     }
   }
-
-}
-
-int A(void)
-{
-  int e;
-  srand(time(NULL));
-  e = rand()%6+1;
-  return e;
 }
 
 void dummy1(){
