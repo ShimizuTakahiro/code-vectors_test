@@ -89,7 +89,7 @@ void main(void)
   srand(time(NULL));
   b = rand()%2;
   c = rand()%3+1;
-  
+  */
   if(b == 1){
     //printf("message1\n");
     switch(a)  {
@@ -145,7 +145,7 @@ void main(void)
   }else{
     dummy11();
   }
-  */
+  
 }
 
 void dummy_init(){
