@@ -19,7 +19,16 @@ void dummy10();
   
 void main(void)
 {
-  B();
+  int n;
+  srand(time(NULL));
+  n = rand()%10+1;
+  a = rand()%2+1;
+  b = rand()%3;
+  for(int i=0; i<n; i++){
+    srand(time(NULL));
+    a = rand()%2+1;
+    B();
+  }
 }
 
 void B(void)
@@ -72,7 +81,7 @@ void B(void)
 	  dummy8();
         }
         else{
-          printf("messsage2\n");
+          printf("message2\n");
 	  dummy9();
         }
         break;
