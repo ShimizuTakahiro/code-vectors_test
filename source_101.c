@@ -91,39 +91,15 @@ void B(void)
     printf("message1\n");
     switch(a)  {
       case(0):
-        if(d == 1){
-          a = 1;
-        }
-        else if (d == 2){
-          a = 2;
-        }
-        else{
-          printf("message2\n");
-        }
+        printf("message2\n");
         break;
   	
       case(1):
-        if(d == 1){
-          a = 2;
-        }
-        else if (d == 2){
-          a = 0;
-        }
-        else{
-          printf("message2\n");
-        }
+        printf("message2\n");
         break;
 
       case(2):
-        if(d == 1){
-          a = 0;
-        }
-        else if (d == 2){
-          a = 1;
-        }
-        else{
-          printf("messsage2\n");
-        }
+        printf("messsage2\n");
         break;
 
         default:
