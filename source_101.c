@@ -17,9 +17,6 @@ void dummy8();
 void dummy9();
 void dummy10();
 void dummy11();
-void dummy12();
-void dummy13();
-void dummy14();
   
 void main(void)
 {
@@ -93,26 +90,7 @@ void B(void)
   
   if(b == 1){
     printf("message1\n");
-    switch(a)  {
-      case(0):
-        printf("message2\n");
-	dummy11();
-        break;
-  	
-      case(1):
-        printf("message2\n");
-	dummy12();
-	break;
-
-      case(2):
-        printf("messsage2\n");
-	dummy13();
-	break;
-
-        default:
-          printf("message3\n");
-	  dummy14();
-    }
+    dummy11();
   }
 
 }
