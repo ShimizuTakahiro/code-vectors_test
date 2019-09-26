@@ -83,6 +83,64 @@ void B(void)
     }
   }
 
+  c = A();
+  d = A();
+
+  
+  if(b == 1){
+    printf("message1\n");
+    switch(a)  {
+      case(0):
+        if(d == 1){
+          a = 1;
+	  dummy1();
+        }
+        else if (d == 2){
+          a = 2;
+	  dummy2();
+        }
+        else{
+          printf("message2\n");
+	  dummy3();
+        }
+        break;
+  	
+      case(1):
+        if(d == 1){
+          a = 2;
+	  dummy4();
+        }
+        else if (d == 2){
+          a = 0;
+	  dummy5();
+        }
+        else{
+          printf("message2\n");
+	  dummy6();
+        }
+        break;
+
+      case(2):
+        if(d == 1){
+          a = 0;
+	  dummy7();
+        }
+        else if (d == 2){
+          a = 1;
+	  dummy8();
+        }
+        else{
+          printf("messsage2\n");
+	  dummy9();
+        }
+        break;
+
+        default:
+          printf("message3\n");
+	  dummy10();
+    }
+  }
+
 }
 
 int A(void)
