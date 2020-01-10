@@ -11,6 +11,16 @@ void dummy4(){
 }
 void dummy5(){
 }
+void dummy6(){
+}
+void dummy7(){
+}
+void dummy8(){
+}
+void dummy9(){
+}
+void dummy10(){
+}
 
 void task(){
   int s,t;
@@ -34,6 +44,33 @@ void task(){
 	break;
       default:
 	dummy5();
+	s++;
+	state = 1;
+	printf("state changed\n");
+      }
+    }
+  }
+
+  scanf("%d", &s);
+  scanf("%d", &t);
+  if(t == 1){
+    dummy6();
+    s++;
+    if(s < 10){
+      dummy7();
+      switch(state){
+      case 1:
+	dummy8();
+	out = s;
+	break;
+      case 2:
+	dummy9();
+	out = 0;
+	state = 3;
+	printf("state changed\n");
+	break;
+      default:
+	dummy10();
 	s++;
 	state = 1;
 	printf("state changed\n");
