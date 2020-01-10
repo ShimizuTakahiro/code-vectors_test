@@ -5,7 +5,7 @@ all: hello
 default: all
 
 hello:
-	$(CC) -Wall -Os -g -c sourceA.c
+	$(CC) -Wall -Os -g -c sourceB.c
 
 clean:
 	rm -f *.o

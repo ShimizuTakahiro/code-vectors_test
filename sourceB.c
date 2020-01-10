@@ -1,10 +1,16 @@
 #include <stdio.h>
 int state, out;
 
+int input(){
+  int in;
+  scanf("%d", &in);
+  return in;
+}
+
 void task(){
   int s,t;
-  scanf("%d", &s);
-  scanf("%d", &t);
+  s = input();
+  t = input();
   if(t == 1){
     s++;
     if(s < 10){
