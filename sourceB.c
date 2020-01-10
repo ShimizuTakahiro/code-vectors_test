@@ -1,7 +1,17 @@
 #include <stdio.h>
 int state, out;
 
-int input(){
+int input_state(){
+  int in;
+  scanf("%d", &in);
+  return in;
+}
+int input_s(){
+  int in;
+  scanf("%d", &in);
+  return in;
+}
+int input_t(){
   int in;
   scanf("%d", &in);
   return in;
@@ -9,8 +19,8 @@ int input(){
 
 void task(){
   int s,t;
-  s = input();
-  t = input();
+  s = input_s();
+  t = input_t();
   if(t == 1){
     s++;
     if(s < 10){
@@ -33,6 +43,7 @@ void task(){
 }
 
 int main(){
+  state = input_state();
   task();
   return 0;
 }
