@@ -1,39 +1,39 @@
 #include <stdio.h>
 int state, out;
 
-int input_state(){
-  int in;
-  scanf("%d", &in);
-  return in;
+void dummy1(){
 }
-int input_s(){
-  int in;
-  scanf("%d", &in);
-  return in;
+void dummy2(){
 }
-int input_t(){
-  int in;
-  scanf("%d", &in);
-  return in;
+void dummy3(){
+}
+void dummy4(){
+}
+void dummy5(){
 }
 
 void task(){
   int s,t;
-  s = input_s();
-  t = input_t();
+  scanf("%d", &s);
+  scanf("%d", &t);
   if(t == 1){
+    dummy1();
     s++;
     if(s < 10){
+      dummy2();
       switch(state){
       case 1:
+	dummy3();
 	out = s;
 	break;
       case 2:
+	dummy4();
 	out = 0;
 	state = 3;
 	printf("state changed\n");
 	break;
       default:
+	dummy5();
 	s++;
 	state = 1;
 	printf("state changed\n");
@@ -43,7 +43,7 @@ void task(){
 }
 
 int main(){
-  state = input_state();
+  scanf("%d", &state);
   task();
   return 0;
 }
